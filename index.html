@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resume Editor</h1>
+            <div class="header-actions">
+                <button id="exportBtn" class="btn btn-secondary">Export JSON</button>
+                <button id="importBtn" class="btn btn-secondary">Import JSON</button>
+                <input type="file" id="fileInput" accept=".json" style="display: none;">
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="editor-panel">
+                <h2>Edit Resume</h2>
+                <form id="resumeForm">
+                    <section class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" placeholder="City, State">
+                        </div>
+                        <div class="form-group">
+                            <label for="website">Website/Portfolio</label>
+                            <input type="url" id="website">
+                        </div>
+                        <div class="form-group">
+                            <label for="summary">Professional Summary</label>
+                            <textarea id="summary" rows="4"></textarea>
+                        </div>
+                    </section>
+
+                    <section class="form-section">
+                        <h3>Experience</h3>
+                        <div id="experienceList"></div>
+                        <button type="button" class="btn btn-add" id="addExperience">+ Add Experience</button>
+                    </section>
+
+                    <section class="form-section">
+                        <h3>Education</h3>
+                        <div id="educationList"></div>
+                        <button type="button" class="btn btn-add" id="addEducation">+ Add Education</button>
+                    </section>
+
+                    <section class="form-section">
+                        <h3>Skills</h3>
+                        <div class="form-group">
+                            <label for="skills">Skills (comma-separated)</label>
+                            <textarea id="skills" rows="3" placeholder="JavaScript, Python, React, etc."></textarea>
+                        </div>
+                    </section>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save Resume</button>
+                        <button type="button" class="btn btn-secondary" id="clearBtn">Clear All</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="preview-panel">
+                <h2>Preview</h2>
+                <div id="resumePreview" class="resume-preview">
+                    <p class="placeholder">Your resume preview will appear here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
