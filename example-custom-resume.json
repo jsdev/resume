@@ -1,0 +1,58 @@
+{
+  "personalInfo": {
+    "name": "Your Name Here",
+    "title": "Your Professional Title",
+    "email": "your.email@example.com",
+    "phone": "+1 (XXX) XXX-XXXX",
+    "location": "Your City, State",
+    "linkedin": "linkedin.com/in/yourprofile",
+    "github": "github.com/yourusername",
+    "website": "yourwebsite.com",
+    "summary": "Write a compelling professional summary here. Highlight your key strengths, years of experience, and what makes you unique. Keep it concise but impactful (2-4 sentences)."
+  },
+  "experience": [
+    {
+      "position": "Your Job Title",
+      "company": "Company Name",
+      "location": "City, State",
+      "startDate": "Month Year",
+      "endDate": "Month Year or Present",
+      "responsibilities": [
+        "Use action verbs to describe your achievements (Led, Developed, Improved, etc.)",
+        "Quantify your impact with numbers and metrics where possible",
+        "Focus on results and outcomes, not just tasks",
+        "Highlight technologies, tools, and methodologies used"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Degree Name (e.g., Bachelor of Science in Computer Science)",
+      "institution": "University or College Name",
+      "location": "City, State",
+      "graduationDate": "Month Year",
+      "gpa": "X.X/4.0 (optional)",
+      "honors": "Honors, awards, or distinctions (optional)"
+    }
+  ],
+  "skills": {
+    "Category 1 (e.g., Programming Languages)": ["Skill 1", "Skill 2", "Skill 3"],
+    "Category 2 (e.g., Frameworks)": ["Skill A", "Skill B", "Skill C"],
+    "Category 3 (e.g., Tools)": ["Tool 1", "Tool 2", "Tool 3"]
+  },
+  "projects": [
+    {
+      "name": "Project Name",
+      "description": "Brief description of the project and its purpose",
+      "technologies": ["Tech 1", "Tech 2", "Tech 3"],
+      "link": "github.com/yourusername/project (optional)"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certification Name",
+      "issuer": "Issuing Organization",
+      "date": "Year"
+    }
+  ]
+}
