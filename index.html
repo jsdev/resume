@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resume Builder</h1>
+            <p>Create beautiful resumes with customizable templates</p>
+        </header>
+
+        <div class="controls">
+            <h2>Template Selection</h2>
+            <div class="template-selector">
+                <button class="template-btn active" data-template="professional">Professional</button>
+                <button class="template-btn" data-template="modern">Modern</button>
+                <button class="template-btn" data-template="creative">Creative</button>
+            </div>
+            <div class="actions">
+                <button id="editBtn" class="action-btn">Edit Resume Data</button>
+                <button id="printBtn" class="action-btn">Print / Save PDF</button>
+            </div>
+        </div>
+
+        <div id="resume" class="resume professional">
+            <!-- Resume content will be dynamically generated here -->
+        </div>
+    </div>
+
+    <!-- Modal for editing resume data -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Resume Data (JSON)</h2>
+            <textarea id="jsonEditor" rows="20"></textarea>
+            <div class="modal-actions">
+                <button id="saveBtn" class="action-btn">Save & Apply</button>
+                <button id="resetBtn" class="action-btn secondary">Reset to Default</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="resume-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
